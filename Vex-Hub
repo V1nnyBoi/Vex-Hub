@@ -1,0 +1,67 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+local Flags = Library.Flags
+--Library.DefaultColor = Color3.fromRGB(65, 143, 232)
+local ID = 1
+
+
+
+-- ARSENAL
+
+if game.PlaceId == 286090429 then
+local Window = Library:Window({
+   Text = "vex hub - Arsenal"
+})
+
+Window:Button({
+    Text = "Dark Hub",
+    Callback = function(bool)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+        Library:Notification({
+            Text = "Dark Hub loaded.",
+            Duration = 5
+        })
+    end
+ })
+
+ Window:Button({
+    Text = "Bolts Hub",
+    Callback = function (bool)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5"))()
+        Library:Notification({
+            Text = "Bolts Hub loaded.",
+            Duration = 5
+        })
+    end
+ })
+
+ Window:Button({
+    Text = "V.G Hub",
+    Callback = function (bool)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+        Library:Notification({
+            Text = "V.G Hub loaded.",
+            Duration = 5
+        })
+    end
+ })
+
+
+
+-- PHANTOM FORCES
+
+elseif game.PlaceId == 292439477 then
+    local Window = Library:Window({
+        Text = "vex hub - Phantom Forces"
+     })
+     
+     Window:Button({
+         Text = "Strawhook",
+         Callback = function(bool)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
+            Library:Notification({
+                 Text = "Strawhook loaded.",
+                 Duration = 5
+             })
+         end
+      })
+end
